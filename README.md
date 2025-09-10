@@ -66,13 +66,11 @@ Both approaches use the same implementation, located in perceptron/perceptron.py
 
 ## References
 This project builds upon the following resources:
-- **Perceptron implementation**:
-
+- **Perceptron implementation**
   Sebastian Raschka, Yuxi (Hayden) Liu, and Dmytro Dzhulgakov.  
   *Machine Learning with PyTorch and Scikit-Learn*. Packt Publishing, 2022.  
   [GitHub repository](https://github.com/rasbt/machine-learning-book)
 
-- **Dataset**:
-  
+- **Dataset**
   Fisher, R. (1936). *Iris* [Dataset]. UCI Machine Learning Repository.  
   https://doi.org/10.24432/C56C76
