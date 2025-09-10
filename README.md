@@ -18,19 +18,19 @@ The implementation is based on the version presented in *Machine Learning with P
 - Python **3.9** (tested on **3.9.6**)
 
 ## Installation
-1. Clone the repository:
+1. **Clone the repository**
 ```bash
 git clone https://github.com/<your-username>/perceptron.git
 cd perceptron
 ```
 
-2. Create and activate a virtual environment (recommended):
+2. **Create and activate a virtual environment (recommended)**
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 ```
 
-3. Install the required dependencies:
+3. **Install the required dependencies**
 ```bash
 pip install -r requirements.txt
 ```
