@@ -3,6 +3,7 @@ This repository contains a minimal experiment with the Perceptron algorithm, ext
 The implementation is based on the version presented in *Machine Learning with PyTorch and Scikit-Learn* by Sebastian Raschka et al., with a small modification to introduce early stopping.
 
 ## Project structure
+```
 ├── notebook/
 │ └── perceptron_demo.ipynb # Jupyter notebook showing experiments on the Iris dataset
 ├── perceptron/
@@ -11,6 +12,7 @@ The implementation is based on the version presented in *Machine Learning with P
 ├── requirements.txt # Dependencies for reproducing results
 ├── LICENSE
 └── .gitignore
+```
 
 ## Environment
 - Python **3.9** (tested on **3.9.6**)
