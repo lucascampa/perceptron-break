@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 class Perceptron:
     """Perceptron classifier.
@@ -50,6 +51,7 @@ class Perceptron:
         
         self.errors_ = []
 
+        start = time.time()
         for _ in range(self.n_iter):
             errors = 0
             for xi, target in zip(X, y):
@@ -58,6 +60,10 @@ class Perceptron:
                 self.b_ += update
                 errors += int(update != 0.0)
             self.errors_.append(errors)
+        end = time.time()
+
+        print('Perceptron.fit() --> Time elapsed:', (end - start) * 1000, 'milliseconds')
+        
         return self
 
     def fit_break(self, X, y):
@@ -68,6 +74,7 @@ class Perceptron:
         
         self.errors_ = []
 
+        start = time.time()
         for _ in range(self.n_iter):
             errors = 0
             for xi, target in zip(X, y):
@@ -76,11 +83,16 @@ class Perceptron:
                 self.b_ += update
                 errors += int(update != 0.0)
 
-            # --- BEGIN: early stopping tweak ---
-            if errors == 0:
-                break
             self.errors_.append(errors)
+            
+            # --- BEGIN: early stopping tweak ---
+            if self.errors_[-1] == 0:
+                break
             # --- END: early stopping tweak ---
+        end = time.time()
+
+        print('Perceptron.fit_break() --> Time elapsed:', (end - start) * 1000, 'milliseconds')
+        
         return self
 
     def net_input(self, X):
