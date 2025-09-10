@@ -1,3 +1,19 @@
+"""
+Perceptron implementation adapted from:
+
+Sebastian Raschka, Yuxi (Hayden) Liu, and Vahid Mirjalili.
+*Machine Learning with PyTorch and Scikit-Learn*. Packt Publishing, 2022.
+Source code: https://github.com/rasbt/machine-learning-book
+
+Modifications:
+- Added `fit_break` method for early stopping (stop training once convergence is reached)
+- Added execution time measurement in `fit` and `fit_break`
+
+Author of modifications: Lucas Campagnaro
+"""
+
+__author__ = "Lucas Campagnaro"
+
 import numpy as np
 import time
 
