@@ -1,8 +1,5 @@
-ch02.py
-python_environment_check.py
-python==3.9.6
-numpy==1.21.2
-scipy==1.7.0
 matplotlib==3.4.3
-scikit-learn==1.0
+numpy==1.21.2
 pandas==1.3.2
+scikit-learn==1.0
+scipy==1.7.0
